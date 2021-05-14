@@ -1,6 +1,7 @@
 # Getting and Cleaning Data Final Project
 
-There is a single R script called run_analysis.R. This script will perform the following operations:
+There is a single R script called run_analysis.R. The script requires the `dplyr` package to be installed. The script will attempt to load that library.
+This script will perform the following operations:
 
 1. Download the UCI data set to the current working directory
 2. Unzip the UCI data set

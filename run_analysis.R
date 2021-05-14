@@ -1,3 +1,5 @@
+library(dplyr)
+
 # Download and unzip data
 if (!file.exists("uci.zip")) {
     download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", destfile = "uci.zip")
