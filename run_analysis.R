@@ -31,3 +31,4 @@ data_mean_std <- data[, grep("subject|activity|mean()|std()", names(data))]
 
 # 5. Get the average of each variable for each activity and each subject
 data_avg_per_activity_subject <- as.data.frame(data_mean_std %>% group_by(activity, subject) %>% summarize(across(everything(), mean)))
+write.table(data_avg_per_activity_subject, file = "tidy_data.txt", row.names = FALSE)

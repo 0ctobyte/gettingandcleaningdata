@@ -15,3 +15,5 @@ The variable names and descriptions can be found in the features_info.txt file i
 
 The run_analysis.R script will produce a data frame called `data_mean_std` which contains the mean and standard deviation data.
 It will also produce a data frame called `data_avg_per_activity_subject` which is the average of each of the variables in `data_mean_std` grouped by activity and subject.
+
+Finally, it will produce a text file containing the `data_avg_per_activity_subject` data frame data. The text file is called `tidy_data.txt`.
